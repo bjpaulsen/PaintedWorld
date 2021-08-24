@@ -2,27 +2,25 @@
 // The character that the player controls
 
 using System.Collections;
-using System.Diagnostics;
-using System.Linq.Expressions;
-using System.Reflection;
 using UnityEngine;
 
 public enum Move
 {
     Left = -1,
+    Nowhere = 0,
     Right = 1
 }
 
 public class PlayerCharacter : MonoBehaviour
 {
     // TEMPORARY: move to scene info object
+    [Header("TEMPORARY")]
     public float rightBoundary = 10;
 
-    // References
-    private SpriteRenderer sprite;
+    [Header("References")]
+    [SerializeField] Animator animator;
 
-    // Constants
-
+    [Header("Constants")]
     [SerializeField]
     private float walkSpeed = 1;
     public float WalkSpeed { get { return walkSpeed; } }
@@ -30,10 +28,40 @@ public class PlayerCharacter : MonoBehaviour
 
     public void Walk(Move direction)
     {
+        if (direction == Move.Nowhere)
+        {
+            Stop();
+            return;
+        }
+
+        Flip(direction);
+
+        AnimateWalk(true);
         
+        MoveHorizontal(direction, WalkSpeed);
+    }
+
+    public void Stop()
+    {
+        AnimateWalk(false);
+    }
+
+    private void MoveHorizontal(Move direction, float speed)
+    {
         float oldX = transform.position.x;
-        float newX = oldX + WalkSpeed * (int) direction;
+        float newX = oldX + speed * (int) direction;
         if (newX <= rightBoundary)
             transform.position = new Vector3(newX, transform.position.y, transform.position.z);
+    }
+
+    private void Flip(Move direction)
+    {
+        float rotation = direction == Move.Left ? -180 : 0;
+        transform.rotation = Quaternion.Euler(0, rotation, 0);
+    }
+
+    private void AnimateWalk(bool animate)
+    {
+        animator.SetBool("Walking", animate);
     }
 }
