@@ -323,7 +323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightBoundary: 10
   animator: {fileID: 330290370}
-  walkSpeed: 0.06
+  walkSpeed: 0.04
 --- !u!114 &330290374
 MonoBehaviour:
   m_ObjectHideFlags: 0
