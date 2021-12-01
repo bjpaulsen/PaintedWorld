@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1440
-    height: 900
+    x: 69
+    y: 53
+    width: 1371
+    height: 847
   m_ShowMode: 4
   m_Title: Test Runner
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -44,9 +44,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1440
-    height: 900
-  m_MinSize: {x: 875, y: 300}
+    width: 1371
+    height: 847
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1440
+    width: 1371
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 880
-    width: 1440
+    y: 827
+    width: 1371
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -117,12 +117,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1440
-    height: 850
-  m_MinSize: {x: 504, y: 471}
-  m_MaxSize: {x: 18003, y: 14021}
+    width: 1371
+    height: 797
+  m_MinSize: {x: 504, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 3098
+  controlID: 1165
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,12 +142,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1128
-    height: 850
-  m_MinSize: {x: 403, y: 471}
-  m_MaxSize: {x: 14002, y: 14021}
+    width: 1073.5
+    height: 797
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 3042
+  controlID: 1226
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,12 +167,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1128
-    height: 544
+    width: 1073.5
+    height: 510
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 3043
+  controlID: 1227
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,8 +190,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 273.5
-    height: 544
+    width: 259.5
+    height: 510
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
@@ -214,10 +214,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 273.5
+    x: 259.5
     y: 0
-    width: 854.5
-    height: 544
+    width: 814
+    height: 510
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -226,7 +226,7 @@ MonoBehaviour:
   - {fileID: 14}
   - {fileID: 17}
   m_Selected: 1
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,13 +245,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 544
-    width: 1128
-    height: 306
-  m_MinSize: {x: 332, y: 250}
-  m_MaxSize: {x: 14002, y: 10000}
+    y: 510
+    width: 1073.5
+    height: 287
+  m_MinSize: {x: 333, y: 271}
+  m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 3064
+  controlID: 1172
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,8 +269,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 273.5
-    height: 306
+    width: 259.5
+    height: 287
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 18}
@@ -293,10 +293,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 273.5
+    x: 259.5
     y: 0
-    width: 854.5
-    height: 306
+    width: 814
+    height: 287
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
@@ -304,7 +304,7 @@ MonoBehaviour:
   - {fileID: 19}
   - {fileID: 20}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -320,12 +320,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1128
+    x: 1073.5
     y: 0
-    width: 312
-    height: 850
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 297.5
+    height: 797
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 21}
@@ -352,10 +352,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 273.5
-    y: 30
-    width: 852.5
-    height: 523
+    x: 328.5
+    y: 83
+    width: 812
+    height: 489
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 852.5, y: 502}
+  m_TargetSize: {x: 812, y: 468}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -378,10 +378,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -213.125
-    m_HBaseRangeMax: 213.125
-    m_VBaseRangeMin: -125.5
-    m_VBaseRangeMax: 125.5
+    m_HBaseRangeMin: -203
+    m_HBaseRangeMax: 203
+    m_VBaseRangeMin: -117
+    m_VBaseRangeMax: 117
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -399,23 +399,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 852.5
-      height: 502
+      width: 812
+      height: 468
     m_Scale: {x: 2, y: 2}
-    m_Translation: {x: 426.25, y: 251}
+    m_Translation: {x: 406, y: 234}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -213.125
-      y: -125.5
-      width: 426.25
-      height: 251
+      x: -203
+      y: -117
+      width: 406
+      height: 234
     m_MinimalGUI: 1
   m_defaultScale: 2
-  m_LastWindowPixelSize: {x: 1705, y: 1046}
+  m_LastWindowPixelSize: {x: 1624, y: 978}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -441,17 +441,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 30
-    width: 272.5
-    height: 523
+    x: 69
+    y: 83
+    width: 258.5
+    height: 489
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: a6deffffd2dfffff1ee0ffff20e1ffff5ae1ffff7ae2ffffa6e3fffff4e3ffff28e4ffffb4e4ffff8ce5ffff26e6ffffc6e6ffff72e7ffff2ce8ffffcce8ffff6ee9ffffc8eaffff5eebfffffeebffff96ecffff2cedffff66edfffffcedffff94eeffff2eefffffbcefffff58f0fffffaf0ffff1af1ffffaaf1ffff62f4ffff82f4ffff0ef5ffff9ef5ffffdef5ffff6ef6ffff50f7ffffd0f7ffff5af8ffffdaf8ffff72f9ffff40fbffff
+      m_SelectedIDs: ee520000
+      m_LastClickedID: 21230
+      m_ExpandedIDs: ccdfffff0ce0fffff8e4ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -495,10 +495,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 272
+    x: 273.5
     y: 30
-    width: 825.5
-    height: 512
+    width: 852
+    height: 523
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -613,21 +613,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 273.5
     y: 30
-    width: 852.5
+    width: 852
     height: 523
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: -7040588721900462864, guid: 52cc87909b6fc4592924d174a9dbe113, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.5397062
+    - e00: 0.9854692
       e01: 0
       e02: 0
-      e03: -5.962845
+      e03: 2.6438293
       e10: 0
-      e11: 0.5397062
+      e11: 0.9854692
       e12: 0
-      e13: 155.07965
+      e13: 15.333954
       e20: 0
       e21: 0
       e22: 1
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_MiniTool: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_CurrentEditor: 0
+  m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
 --- !u!114 &18
@@ -672,10 +672,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 574
-    width: 272.5
-    height: 285
+    x: 69
+    y: 593
+    width: 258.5
+    height: 266
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -689,8 +689,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Scripts/Player Scripts
+    m_Folders: []
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -705,7 +704,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 4e560000
     m_LastClickedID: 22094
-    m_ExpandedIDs: ffffffff000000008e42000090420000924200009442000096420000984200009a4200009c4200009e420000
+    m_ExpandedIDs: ffffffff0000000060530000625300006453000066530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -733,7 +732,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000008e42000090420000924200009442000096420000984200009a4200009c4200009e420000
+    m_ExpandedIDs: ffffffff0000000060530000625300006453000066530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -809,10 +808,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 273.5
-    y: 574
-    width: 852.5
-    height: 285
+    x: 328.5
+    y: 593
+    width: 812
+    height: 266
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &20
 MonoBehaviour:
@@ -834,14 +833,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 277
-    y: 586
-    width: 845
-    height: 273
+    x: 273.5
+    y: 574
+    width: 853
+    height: 285
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 18068
+  m_LastSelectedObjectID: 21230
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -862,10 +861,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1128
-    y: 30
-    width: 311
-    height: 829
+    x: 1142.5
+    y: 83
+    width: 296.5
+    height: 776
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -874,7 +873,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 330
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -899,18 +898,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1128
-    y: 30
-    width: 311
-    height: 829
+    x: 1142.5
+    y: 83
+    width: 296.5
+    height: 776
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 3125
+    ID: 1368
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 569
-    - 190
+    - 529.5
+    - 176.5
     relativeSizes:
     - 0.75
     - 0.25
@@ -920,34 +919,18 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 759
+    lastTotalSize: 706
     splitSize: 6
     xOffset: 0
     m_Version: 1
-    oldRealSizes: 
-    oldMinSizes: 
-    oldMaxSizes: 
-    oldSplitSize: 0
+    oldRealSizes: 39020000be000000
+    oldMinSizes: 2000000020000000
+    oldMaxSizes: 0000000000000000
+    oldSplitSize: 6
   m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 22}
-    m_NewResultList:
-    - id: 1004
-      uniqueId: '[PaintedWorld][suite]'
-      name: PaintedWorld
-      fullName: PaintedWorld
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
+    m_NewResultList: []
     m_ResultText: 
     m_ResultStacktrace: 
     m_TestListState:
@@ -988,9 +971,9 @@ MonoBehaviour:
       uniqueId: '[PaintedWorld][suite]'
       name: PaintedWorld
       fullName: PaintedWorld
-      resultStatus: 1
-      duration: 0.0737426
-      messages: 
+      resultStatus: 2
+      duration: 0.0370064
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1000,13 +983,13 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1004
+    - id: 1005
       uniqueId: '[Assembly-CSharp-Editor][/Users/benpaulsen/Desktop/Projects/PaintedWorld/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
       name: Assembly-CSharp-Editor.dll
       fullName: /Users/benpaulsen/Desktop/Projects/PaintedWorld/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
-      resultStatus: 1
-      duration: 0.0377786
-      messages: 
+      resultStatus: 2
+      duration: 0.0097226
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1016,13 +999,13 @@ MonoBehaviour:
       categories: []
       parentId: 1000
       parentUniqueId: '[PaintedWorld][suite]'
-    - id: 1003
+    - id: 1001
       uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PlayerCharacterTests+TheWalkMethod][suite]
       name: PlayerCharacterTests+TheWalkMethod
       fullName: PlayerCharacterTests+TheWalkMethod
-      resultStatus: 1
-      duration: 0.0331771
-      messages: 
+      resultStatus: 2
+      duration: 0.0059063
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1036,11 +1019,21 @@ MonoBehaviour:
       uniqueId: Assembly-CSharp-Editor.dll/PlayerCharacterTests+TheWalkMethod/[Assembly-CSharp-Editor][PlayerCharacterTests+TheWalkMethod.MovesPlayerLeft]
       name: MovesPlayerLeft
       fullName: PlayerCharacterTests+TheWalkMethod.MovesPlayerLeft
-      resultStatus: 1
-      duration: 0.0142764
-      messages: 
+      resultStatus: 2
+      duration: 0.0007938
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: 
+      stacktrace: "  at PlayerCharacter.AnimateWalk (System.Boolean animate) [0x00000]
+        in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Player
+        Scripts/PlayerCharacter.cs:66 \n  at PlayerCharacter.Walk (Move direction)
+        [0x00011] in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Player
+        Scripts/PlayerCharacter.cs:40 \n  at PlayerCharacterTests+TheWalkMethod.MovesPlayerLeft
+        () [0x00010] in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Editor/PlayerCharacterTests.cs:48
+        \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1053,11 +1046,21 @@ MonoBehaviour:
       uniqueId: Assembly-CSharp-Editor.dll/PlayerCharacterTests+TheWalkMethod/[Assembly-CSharp-Editor][PlayerCharacterTests+TheWalkMethod.MovesPlayerRight]
       name: MovesPlayerRight
       fullName: PlayerCharacterTests+TheWalkMethod.MovesPlayerRight
-      resultStatus: 1
-      duration: 0.0008363
-      messages: 
+      resultStatus: 2
+      duration: 0.0004194
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: 
+      stacktrace: "  at PlayerCharacter.AnimateWalk (System.Boolean animate) [0x00000]
+        in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Player
+        Scripts/PlayerCharacter.cs:66 \n  at PlayerCharacter.Walk (Move direction)
+        [0x00011] in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Player
+        Scripts/PlayerCharacter.cs:40 \n  at PlayerCharacterTests+TheWalkMethod.MovesPlayerRight
+        () [0x00010] in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Editor/PlayerCharacterTests.cs:37
+        \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1070,11 +1073,21 @@ MonoBehaviour:
       uniqueId: Assembly-CSharp-Editor.dll/PlayerCharacterTests+TheWalkMethod/[Assembly-CSharp-Editor][PlayerCharacterTests+TheWalkMethod.StaysInsideRightBound]
       name: StaysInsideRightBound
       fullName: PlayerCharacterTests+TheWalkMethod.StaysInsideRightBound
-      resultStatus: 1
-      duration: 0.000895
-      messages: 
+      resultStatus: 2
+      duration: 0.000379
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: 
+      stacktrace: "  at PlayerCharacter.AnimateWalk (System.Boolean animate) [0x00000]
+        in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Player
+        Scripts/PlayerCharacter.cs:66 \n  at PlayerCharacter.Walk (Move direction)
+        [0x00011] in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Player
+        Scripts/PlayerCharacter.cs:40 \n  at PlayerCharacterTests+TheWalkMethod.StaysInsideRightBound
+        () [0x00008] in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Editor/PlayerCharacterTests.cs:59
+        \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1083,12 +1096,31 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PlayerCharacterTests+TheWalkMethod][suite]
-    m_ResultText: MovesPlayerRight (0.001s)
-    m_ResultStacktrace: 
+    m_ResultText: "StaysInsideRightBound (0.000s)\n---\nSystem.NullReferenceException
+      : Object reference not set to an instance of an object\n---\nat PlayerCharacter.AnimateWalk
+      (System.Boolean animate) [0x00000] in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Player
+      Scripts/PlayerCharacter.cs:66 \n  at PlayerCharacter.Walk (Move direction)
+      [0x00011] in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Player
+      Scripts/PlayerCharacter.cs:40 \n  at PlayerCharacterTests+TheWalkMethod.StaysInsideRightBound
+      () [0x00008] in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Editor/PlayerCharacterTests.cs:59
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0"
+    m_ResultStacktrace: "  at PlayerCharacter.AnimateWalk (System.Boolean animate)
+      [0x00000] in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Player
+      Scripts/PlayerCharacter.cs:66 \n  at PlayerCharacter.Walk (Move direction)
+      [0x00011] in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Player
+      Scripts/PlayerCharacter.cs:40 \n  at PlayerCharacterTests+TheWalkMethod.StaysInsideRightBound
+      () [0x00008] in /Users/benpaulsen/Desktop/Projects/PaintedWorld/Assets/Scripts/Editor/PlayerCharacterTests.cs:59
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 "
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f108a782
-      m_LastClickedID: -2102982415
+      m_SelectedIDs: c459c283
+      m_LastClickedID: -2084415036
       m_ExpandedIDs: b326a4948c7d9aa2e4501eadf0387bc0ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0

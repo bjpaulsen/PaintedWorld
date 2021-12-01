@@ -16,6 +16,7 @@ public class PlayerCharacter : MonoBehaviour
     // TEMPORARY: move to scene info object
     [Header("TEMPORARY")]
     public float rightBoundary = 10;
+    public float leftBoundary = -10;
 
     [Header("References")]
     [SerializeField] Animator animator;
@@ -50,7 +51,7 @@ public class PlayerCharacter : MonoBehaviour
     {
         float oldX = transform.position.x;
         float newX = oldX + speed * (int) direction;
-        if (newX <= rightBoundary)
+        if (newX < rightBoundary && newX > leftBoundary)
             transform.position = new Vector3(newX, transform.position.y, transform.position.z);
     }
 
