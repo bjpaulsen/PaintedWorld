@@ -8,7 +8,7 @@ public class RecordPlayer : MonoBehaviour
 
     void Start() 
     { 
-        song = FMODUnity.RuntimeManager.CreateInstance("event:/dying while golfing (1)");
+        song = FMODUnity.RuntimeManager.CreateInstance("event:/LetterSong");
     }
 
     // Update is called once per frame
@@ -16,6 +16,9 @@ public class RecordPlayer : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
             PlayRecord();
+        
+        if (Input.GetKeyDown("left shift"))
+            song.setParameterByName("muffled", 1);
     }
 
     void PlayRecord()

@@ -63,6 +63,7 @@ public class PlayerCharacter : MonoBehaviour
 
     private void AnimateWalk(bool animate)
     {
-        animator.SetBool("Walking", animate);
+        if (animator != null) // ignore animation during unit test
+            animator.SetBool("Walking", animate);
     }
 }
