@@ -7,7 +7,7 @@
 [LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7fd561e3c008 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7fd55d1b2808 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,90 +18,3 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SystemI::createSound                     : filename = ../../UCSC/CMPM 150/PaintedWorldFMOD/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 0x7fd55b3fae88 : node = 0x7fd55b3a3fb0
-[LOG] SystemI::createSound                     : add node to async list : head = 0x7fd55b3cf338.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fd55b3fae88
-[LOG] SystemI::createSoundInternal             :     Create name='../../UCSC/CMPM 150/PaintedWorldFMOD/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1355328
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4704
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fd55b3a40c0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='LetterSong', format=5, channels=1, frequency=48000, lengthbytes=1351488, lengthpcm=10183680, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.981323.
-[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fd55b3fae88
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1355328
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 4704
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x70000e7eb94c
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x161fe5c66
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x161fe5d1d
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x161fe5d4a
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x161fe5de8
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7fd55b1b16a8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='fsharp-hit-low', format=5, channels=1, frequency=48000, lengthbytes=1984, lengthpcm=6730, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.106598.
-[LOG] SystemI::createSound                     : filename = ../../UCSC/CMPM 150/PaintedWorldFMOD/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0x7fd559fac738 : node = 0x7fd559fac8f0
-[LOG] SystemI::createSound                     : add node to async list : head = 0x7fd55b3cf338.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fd559fac738
-[LOG] SystemI::createSoundInternal             :     Create name='../../UCSC/CMPM 150/PaintedWorldFMOD/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1355328
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4704
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fd559faca00
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='LetterSong', format=5, channels=1, frequency=48000, lengthbytes=1351488, lengthpcm=10183680, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.981323.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fd559fac738
-[LOG] SoundI::release                          : LetterSong (0x7fd55b3fae88)
-[LOG] SoundI::release                          :     LetterSong (0x7fd5640a5ec8)
-[LOG] SoundI::release                          :     LetterSong (0x7fd5640703a8)
-[LOG] SystemI::createSound                     : filename = ../../UCSC/CMPM 150/PaintedWorldFMOD/Build/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0x7fd55b4123a8 : node = 0x7fd55b408970
-[LOG] SystemI::createSound                     : add node to async list : head = 0x7fd55b3cf338.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fd55b4123a8
-[LOG] SystemI::createSoundInternal             :     Create name='../../UCSC/CMPM 150/PaintedWorldFMOD/Build/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1355328
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4704
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fd55b408a80
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='LetterSong', format=5, channels=1, frequency=48000, lengthbytes=1351488, lengthpcm=10183680, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.981323.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fd55b4123a8
-[LOG] SoundI::release                          : LetterSong (0x7fd559fac738)
-[LOG] SoundI::release                          :     LetterSong (0x7fd562ebb148)
-[LOG] SoundI::release                          :     LetterSong (0x7fd562eba3c8)
-[LOG] SoundI::release                          : LetterSong (0x7fd55b4123a8)
-[LOG] SoundI::release                          :     LetterSong (0x7fd562e9ea88)
-[LOG] SoundI::release                          :     LetterSong (0x7fd562e9ec18)
-[LOG] SoundI::release                          :  (0x7fd55b1b1cc8)
-[LOG] SoundI::release                          :     fsharp-hit-low (0x7fd55b1b1e38)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.

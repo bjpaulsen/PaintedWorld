@@ -28,6 +28,14 @@ public class PlayerCharacter : MonoBehaviour
     private float walkSpeed = 1;
     public float WalkSpeed { get { return walkSpeed; } }
 
+    // Sounds
+    private FMOD.Studio.EventInstance door;
+
+    private void Awake()
+    {
+        //door = FMODUnity.RuntimeManager.CreateInstance("event:/LetterSong");
+    }
+
     private void Start()
     {
         recordPlayer = (RecordPlayer) Object.FindObjectOfType(typeof(RecordPlayer));
@@ -83,7 +91,8 @@ public class PlayerCharacter : MonoBehaviour
 
     private void EnterCabin()
     {
-        recordPlayer.Muffle(0);
+        if (recordPlayer != null)
+            recordPlayer.Muffle(0);
         SceneManager.LoadScene("CabinScene");
     }
     

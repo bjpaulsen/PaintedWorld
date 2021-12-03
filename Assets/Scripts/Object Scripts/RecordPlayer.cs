@@ -5,6 +5,9 @@ using UnityEngine;
 public class RecordPlayer : MonoBehaviour
 {
     private FMOD.Studio.EventInstance song;
+    
+    [SerializeField] GameObject needleUp;
+    [SerializeField] GameObject needleDown;
 
     void Awake() 
     {
@@ -26,6 +29,9 @@ public class RecordPlayer : MonoBehaviour
     private void PlayRecord()
     {
         song.start();
+        // not safe rn, good enough for class demo
+        needleUp.SetActive(false);
+        needleDown.SetActive(true);
     }
 
     public void Muffle(int setting)
