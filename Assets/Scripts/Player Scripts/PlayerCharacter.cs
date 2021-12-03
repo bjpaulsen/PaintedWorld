@@ -3,6 +3,7 @@
 
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum Move
 {
@@ -20,12 +21,17 @@ public class PlayerCharacter : MonoBehaviour
 
     [Header("References")]
     [SerializeField] Animator animator;
+    private RecordPlayer recordPlayer;
 
     [Header("Constants")]
     [SerializeField]
     private float walkSpeed = 1;
     public float WalkSpeed { get { return walkSpeed; } }
 
+    private void Start()
+    {
+        recordPlayer = (RecordPlayer) Object.FindObjectOfType(typeof(RecordPlayer));
+    }
 
     public void Walk(Move direction)
     {
@@ -53,6 +59,8 @@ public class PlayerCharacter : MonoBehaviour
         float newX = oldX + speed * (int) direction;
         if (newX < rightBoundary && newX > leftBoundary)
             transform.position = new Vector3(newX, transform.position.y, transform.position.z);
+        else // temp, should call some scene function
+            ExitCabin();
     }
 
     private void Flip(Move direction)
@@ -65,5 +73,22 @@ public class PlayerCharacter : MonoBehaviour
     {
         if (animator != null) // ignore animation during unit test
             animator.SetBool("Walking", animate);
+    }
+
+    private void ExitCabin()
+    {
+        recordPlayer.Muffle(1);
+        SceneManager.LoadScene("OutsideCabinScene");
+    }
+
+    private void EnterCabin()
+    {
+        recordPlayer.Muffle(0);
+        SceneManager.LoadScene("CabinScene");
+    }
+    
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (other.gameObject.name == "cabin")
+            EnterCabin();
     }
 }

@@ -6,23 +6,30 @@ public class RecordPlayer : MonoBehaviour
 {
     private FMOD.Studio.EventInstance song;
 
-    void Start() 
-    { 
+    void Awake() 
+    {
         song = FMODUnity.RuntimeManager.CreateInstance("event:/LetterSong");
+        
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Record Player");
+        if (objs.Length > 1)
+            Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown("space"))
             PlayRecord();
-        
-        if (Input.GetKeyDown("left shift"))
-            song.setParameterByName("muffled", 1);
     }
 
-    void PlayRecord()
+    private void PlayRecord()
     {
         song.start();
+    }
+
+    public void Muffle(int setting)
+    {
+        song.setParameterByName("muffled", setting);
     }
 }
