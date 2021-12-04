@@ -30,10 +30,12 @@ public class PlayerCharacter : MonoBehaviour
 
     // Sounds
     private FMOD.Studio.EventInstance door;
+    // private FMOD.Studio.EventInstance fireplace;
 
     private void Awake()
     {
-        //door = FMODUnity.RuntimeManager.CreateInstance("event:/LetterSong");
+        door = FMODUnity.RuntimeManager.CreateInstance("event:/door");
+        // fireplace = FMODUnity.RuntimeManager.CreateInstance("event:/fireplace");
     }
 
     private void Start()
@@ -85,12 +87,19 @@ public class PlayerCharacter : MonoBehaviour
 
     private void ExitCabin()
     {
+        door.start(); // temp implementation for demo. should be on scene/door
+        // fireplace.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        // fireplace.release();
+
         recordPlayer.Muffle(1);
         SceneManager.LoadScene("OutsideCabinScene");
     }
 
     private void EnterCabin()
     {
+        door.start(); // temp implementation for demo. should be on scene/door
+        // fireplace.start();
+
         if (recordPlayer != null)
             recordPlayer.Muffle(0);
         SceneManager.LoadScene("CabinScene");
