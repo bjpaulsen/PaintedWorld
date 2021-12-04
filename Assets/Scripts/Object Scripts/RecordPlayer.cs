@@ -5,6 +5,7 @@ using UnityEngine;
 public class RecordPlayer : MonoBehaviour
 {
     private FMOD.Studio.EventInstance song;
+    private FMOD.Studio.EventInstance needleSound;
     
     [SerializeField] GameObject needleUp;
     [SerializeField] GameObject needleDown;
@@ -12,6 +13,7 @@ public class RecordPlayer : MonoBehaviour
     void Awake() 
     {
         song = FMODUnity.RuntimeManager.CreateInstance("event:/LetterSong");
+        needleSound = FMODUnity.RuntimeManager.CreateInstance("event:/RecordPlayerStart");
         
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Record Player");
         if (objs.Length > 1)
@@ -28,6 +30,7 @@ public class RecordPlayer : MonoBehaviour
 
     private void PlayRecord()
     {
+        needleSound.start();
         song.start();
         // not safe rn, good enough for class demo
         needleUp.SetActive(false);
