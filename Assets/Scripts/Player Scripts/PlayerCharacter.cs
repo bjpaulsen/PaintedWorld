@@ -23,19 +23,24 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] Animator animator;
     private RecordPlayer recordPlayer;
 
+    [Header("Sounds")]
+    [SerializeField] GameObject footsteps;
+    // [SerializeField] private string footstepType;
+    private FMOD.Studio.EventInstance door;
+    // private FMOD.Studio.EventInstance fireplace;
+    // private FMOD.Studio.EventInstance footsteps;
+
     [Header("Constants")]
     [SerializeField]
     private float walkSpeed = 1;
     public float WalkSpeed { get { return walkSpeed; } }
 
-    // Sounds
-    private FMOD.Studio.EventInstance door;
-    // private FMOD.Studio.EventInstance fireplace;
-
     private void Awake()
     {
         door = FMODUnity.RuntimeManager.CreateInstance("event:/door");
         // fireplace = FMODUnity.RuntimeManager.CreateInstance("event:/fireplace");
+        // footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/" + footstepType);
+        // footsteps.start();
     }
 
     private void Start()
@@ -54,6 +59,10 @@ public class PlayerCharacter : MonoBehaviour
         Flip(direction);
 
         AnimateWalk(true);
+
+        // Start walking sound
+        // footsteps.setPaused(false);
+        footsteps.SetActive(true);
         
         MoveHorizontal(direction, WalkSpeed);
     }
@@ -61,6 +70,10 @@ public class PlayerCharacter : MonoBehaviour
     public void Stop()
     {
         AnimateWalk(false);
+
+        // Stop walking sound
+        // footsteps.setPaused(true);
+        footsteps.SetActive(false);
     }
 
     private void MoveHorizontal(Move direction, float speed)
@@ -87,11 +100,13 @@ public class PlayerCharacter : MonoBehaviour
 
     private void ExitCabin()
     {
+        // footsteps.SetActive(false);
         door.start(); // temp implementation for demo. should be on scene/door
         // fireplace.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         // fireplace.release();
 
-        recordPlayer.Muffle(1);
+        if (recordPlayer != null)
+            recordPlayer.Muffle(1);
         SceneManager.LoadScene("OutsideCabinScene");
     }
 
